@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       clipPath: {
-        trapezium: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 0%)",
+        trapezium: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 70%)",
+      },
+      colors: {
+        "light-black": "#1E1E1E",
       },
     },
   },
