@@ -1,4 +1,6 @@
+import classNames from "classnames";
 import "./globals.css";
+import { questrial } from "./assets";
 
 export default function RootLayout({
   children,
@@ -7,7 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-white bg-light-black">{children}</body>
+      <body
+        className={classNames(questrial.className, "text-white bg-light-black")}
+      >
+        {children}
+      </body>
     </html>
   );
 }
