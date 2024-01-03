@@ -3,9 +3,9 @@
 import { montserrat } from "@/app/assets";
 import classNames from "classnames";
 import Link from "next/link";
-import { BiRightArrowAlt } from "react-icons/bi";
 import { HamburgerCollapse } from "react-animated-burgers";
 import { useEffect, useState } from "react";
+import Button from "./button";
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -49,15 +49,7 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <Link
-          href="/"
-          className="flex gap-2 items-center rounded-full p-1 bg-light-black group hover:bg-custom-orange transition border-white border-2"
-        >
-          <span className="px-4">Join Us Now</span>
-          <span className="p-1 bg-custom-orange rounded-full">
-            <BiRightArrowAlt className="size-5 group-hover:translate-x-1.5 transition duration-300" />
-          </span>
-        </Link>
+        <Button link="/" dark text="Join Us Now" />
       </nav>
       <div className="grid lg:hidden justify-end">
         {isMount && (
