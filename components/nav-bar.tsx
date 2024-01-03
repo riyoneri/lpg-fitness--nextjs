@@ -73,6 +73,7 @@ export default function NavBar() {
               top: 0,
               transitionDuration: "100ms",
               transitionDelay: "2s",
+              marginTop: "4px",
             }}
             buttonWidth={30}
             barColor={isNavOpen ? "rgb(255 255 255)" : "rgb(30 30 30)"}
