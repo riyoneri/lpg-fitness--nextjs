@@ -1,5 +1,5 @@
 {
-  "name": "LPG-fitness",
+  "name": "lpg-fitness",
   "version": "0.1.0",
   "private": true,
   "author": "Lionel Kaneza",
@@ -17,8 +17,10 @@
     "classnames": "^2.5.1",
     "next": "14.0.4",
     "react": "^18",
+    "react-animated-burgers": "^1.2.8",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "styled-components": "^6.1.6",
     "tailwind-clip-path": "^1.0.0"
   },
   "devDependencies": {
