@@ -72,7 +72,7 @@ export default function NavBar() {
 
         <nav
           className={classNames(
-            "text-white absolute inset-0 z-10 px-5 bg-black/50 flex flex-col items-center pt-10 gap-10",
+            "text-white fixed inset-0 z-10 px-5 bg-black/50 flex flex-col items-center pt-10 gap-7 overflow-scroll xs:gap-10",
             {
               ["block"]: isNavOpen,
               ["hidden"]: !isNavOpen,
@@ -89,7 +89,7 @@ export default function NavBar() {
           </Link>
           <div
             className={
-              "grid *:text-center w-full *:py-1 sm:*:py-2 *:rounded-full sm:w-1/2 gap-5"
+              "grid *:text-center w-full *:py-1 sm:*:py-2 *:rounded-full sm:w-1/2 gap-3 md:gap-5"
             }
           >
             <Link
