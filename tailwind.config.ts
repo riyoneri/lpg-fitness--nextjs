@@ -9,10 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       clipPath: {
-        trapezium: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 70%)",
+        "bg-shape": "polygon(0% 0%, 60% 0%, 45% 75%, 100% 100%, 0% 100%)",
+        "bg-shape-fliped":
+          "polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%, 55% 75%)",
       },
       colors: {
         "light-black": "#1E1E1E",
+        "custom-orange": "#FF3D00",
+      },
+      boxShadow: {
+        inner: "inset -1px 1px 10px var(--tw-shadow)",
       },
     },
   },
