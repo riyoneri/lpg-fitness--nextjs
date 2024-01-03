@@ -20,6 +20,9 @@ const config: Config = {
       boxShadow: {
         inner: "inset -1px 1px 10px var(--tw-shadow)",
       },
+      screens: {
+        xs: "465px",
+      },
     },
   },
   plugins: [tailwindClipPath],
