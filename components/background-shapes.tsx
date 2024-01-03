@@ -29,7 +29,7 @@ export default function BackgroundShapes({
           className="absolute w-1/2 h-full object-cover sm:object-contain right-0 bottom-0"
         />
       )}
-      <div className="absolute h-full w-full bottom-0 bg-gradient-to-b from-transparent to-light-black"></div>
+      <div className="absolute h-full w-full bottom-0 bg-gradient-to-b from-light-black/20 to-light-black"></div>
     </div>
   );
 }
