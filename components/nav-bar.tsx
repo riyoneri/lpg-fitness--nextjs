@@ -1,6 +1,6 @@
 "use client";
 
-import { montserrat, questrial } from "@/app/assets";
+import { montserrat } from "@/app/assets";
 import classNames from "classnames";
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
@@ -24,9 +24,7 @@ export default function NavBar() {
   };
 
   return (
-    <div
-      className={classNames("width-responsive pt-10 grid", questrial.className)}
-    >
+    <>
       <nav className="hidden relative lg:flex items-center justify-between">
         <Link
           href="/"
@@ -61,14 +59,14 @@ export default function NavBar() {
           </span>
         </Link>
       </nav>
-      <div className="grid lg:hidden place-content-center justify-self-end">
+      <div className="grid lg:hidden justify-end">
         {isMount && (
           <HamburgerCollapse
             toggleButton={handleNavOpenChange}
             isActive={isMenuOpen}
             buttonStyle={{
               padding: 0,
-              zIndex: 10,
+              zIndex: 11,
               position: "relative",
               top: 0,
               transitionDuration: "100ms",
@@ -82,7 +80,7 @@ export default function NavBar() {
 
         <nav
           className={classNames(
-            "text-white absolute inset-0 px-5 bg-black/50 flex flex-col items-center pt-10 gap-10",
+            "text-white absolute inset-0 z-10 px-5 bg-black/50 flex flex-col items-center pt-10 gap-10",
             {
               ["block"]: isNavOpen,
               ["hidden"]: !isNavOpen,
@@ -133,6 +131,6 @@ export default function NavBar() {
           </div>
         </nav>
       </div>
-    </div>
+    </>
   );
 }
