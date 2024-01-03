@@ -1,3 +1,9 @@
+import Hero from "./sections/hero";
+
 export default function Home() {
-  return <main>This is main</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
