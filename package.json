@@ -1,5 +1,5 @@
 {
-  "name": "lpg-fitness",
+  "name": "LPG-fitness",
   "version": "0.1.0",
   "private": true,
   "author": "Lionel Kaneza",
@@ -13,6 +13,7 @@
     "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
