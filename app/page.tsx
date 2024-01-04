@@ -7,6 +7,7 @@ export default function Home() {
     <main className="*:my-10 width-responsive">
       <Hero />
       <Info />
+      <About />
     </main>
   );
 }
