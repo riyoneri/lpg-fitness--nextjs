@@ -4,7 +4,7 @@ import NavBar from "@/components/nav-bar";
 
 export default function Hero() {
   return (
-    <section className="min-h-dvh py-10 width-responsive pt-10 flex flex-col gap-5">
+    <section className="min-h-dvh flex flex-col gap-5">
       <BackgroundShapes displayImage />
       <NavBar />
       <div className="relative flex-1 md:w-2/3 lg:w-1/2 flex flex-col justify-center gap-5">
