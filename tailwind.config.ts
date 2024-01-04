@@ -29,6 +29,10 @@ const config: Config = {
       screens: {
         xs: "465px",
       },
+      backgroundImage: {
+        "about-image":
+          "linear-gradient(to right, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.2)), url('assets/images/about.png')",
+      },
     },
   },
   plugins: [tailwindClipPath],
