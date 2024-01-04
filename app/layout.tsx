@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={classNames(questrial.className, "text-white bg-light-black")}
+        className={classNames(questrial.className, "text-white bg-black-light")}
       >
         {children}
       </body>
