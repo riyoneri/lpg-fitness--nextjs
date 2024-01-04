@@ -19,3 +19,6 @@ export { default as fitness1 } from "./images/fitness-1.png";
 export { default as weightLift } from "./images/weight-lifting.png";
 export { default as privateTraining } from "./images/private-training.png";
 export { default as buildMuscle } from "./images/build-muscle.png";
+
+// SVG
+export { default as InfoShape } from "./svg/info-shape";
