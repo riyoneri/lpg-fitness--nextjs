@@ -12,6 +12,9 @@ const config: Config = {
         "bg-shape": "polygon(0% 0%, 60% 0%, 45% 75%, 100% 100%, 0% 100%)",
         "bg-shape-fliped":
           "polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%, 55% 75%)",
+        "center-info": "polygon(0% 0%, 100% 0%, 97% 100%, 3% 100%)",
+        "left-info": "polygon(0% 20%, 100% 20%, 100% 100%, 0% 85%)",
+        "right-info": "polygon(0% 20%, 100% 20%, 100% 85%, 0% 100%)",
       },
       colors: {
         "light-black": "#1E1E1E",
