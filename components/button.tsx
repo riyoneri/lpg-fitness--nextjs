@@ -21,8 +21,8 @@ export default function Button({
       className={classNames(
         "flex gap-2 items-center group rounded-full p-1 transition border-2",
         {
-          "bg-light-black hover:bg-custom-orange border-white": dark,
-          "bg-custom-orange hover:bg-white border-light-black": !dark,
+          "bg-black-light hover:bg-custom-orange border-white": dark,
+          "bg-custom-orange hover:bg-white border-black-light": !dark,
         },
         className,
       )}
@@ -37,7 +37,7 @@ export default function Button({
       <span
         className={classNames("p-1 rounded-full", {
           "bg-custom-orange": dark,
-          "bg-light-black": !dark,
+          "bg-black-light": !dark,
         })}
       >
         <BiRightArrowAlt className="size-5 group-hover:translate-x-1.5 transition duration-300" />
