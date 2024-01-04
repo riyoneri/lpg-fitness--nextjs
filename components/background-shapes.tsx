@@ -15,7 +15,7 @@ export default function BackgroundShapes({
     <div className="absolute bg-custom-orange shadow-inner shadow-black/90 inset-0">
       <div
         className={classNames(
-          "w-1/2 relative sm:w-auto shadow-lg bg-light-black h-full",
+          "w-1/2 relative sm:w-auto bg-light-black h-full",
           {
             "sm:clip-path-bg-shape": !flipShapes,
             "sm:clip-path-bg-shape-fliped left-1/2 sm:left-0": flipShapes,
