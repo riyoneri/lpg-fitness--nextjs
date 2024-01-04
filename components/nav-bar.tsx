@@ -6,6 +6,8 @@ import Link from "next/link";
 import { HamburgerCollapse } from "react-animated-burgers";
 import { useEffect, useState } from "react";
 import Button from "./button";
+import { StyleSheetManager } from "styled-components";
+import isValidProp from "@emotion/is-prop-valid";
 
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -53,21 +55,23 @@ export default function NavBar() {
       </nav>
       <div className="grid lg:hidden justify-end">
         {isMount && (
-          <HamburgerCollapse
-            toggleButton={handleNavOpenChange}
-            isActive={isMenuOpen}
-            buttonStyle={{
-              padding: 0,
-              zIndex: 11,
-              position: "relative",
-              top: 0,
-              transitionDuration: "100ms",
-              transitionDelay: "2s",
-              marginTop: "4px",
-            }}
-            buttonWidth={30}
-            barColor={isNavOpen ? "rgb(255 255 255)" : "rgb(30 30 30)"}
-          />
+          <StyleSheetManager shouldForwardProp={isValidProp}>
+            <HamburgerCollapse
+              toggleButton={handleNavOpenChange}
+              isActive={isMenuOpen}
+              buttonStyle={{
+                padding: 0,
+                zIndex: 11,
+                position: "relative",
+                top: 0,
+                transitionDuration: "100ms",
+                transitionDelay: "2s",
+                marginTop: "4px",
+              }}
+              buttonWidth={30}
+              barColor={isNavOpen ? "rgb(255 255 255)" : "rgb(30 30 30)"}
+            />
+          </StyleSheetManager>
         )}
 
         <nav
