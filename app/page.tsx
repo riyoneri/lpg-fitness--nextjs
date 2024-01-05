@@ -1,4 +1,5 @@
 import About from "./sections/about";
+import Contact from "./sections/contact";
 import Footer from "./sections/footer";
 import Hero from "./sections/hero";
 import Info from "./sections/info";
@@ -15,6 +16,7 @@ export default function Home() {
       <Trainers />
       <Pricing />
       <Stories />
+      <Contact />
       <Footer />
     </main>
   );
