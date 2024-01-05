@@ -2,6 +2,7 @@ import About from "./sections/about";
 import Hero from "./sections/hero";
 import Info from "./sections/info";
 import Pricing from "./sections/pricing";
+import Stories from "./sections/stories";
 import Trainers from "./sections/trainers";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Trainers />
       <Pricing />
+      <Stories />
     </main>
   );
 }
