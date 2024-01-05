@@ -1,6 +1,7 @@
 import About from "./sections/about";
 import Hero from "./sections/hero";
 import Info from "./sections/info";
+import Trainers from "./sections/trainers";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Info />
       <About />
+      <Trainers />
     </main>
   );
 }
