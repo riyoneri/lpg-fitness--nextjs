@@ -1,4 +1,5 @@
 import About from "./sections/about";
+import Footer from "./sections/footer";
 import Hero from "./sections/hero";
 import Info from "./sections/info";
 import Pricing from "./sections/pricing";
@@ -14,6 +15,7 @@ export default function Home() {
       <Trainers />
       <Pricing />
       <Stories />
+      <Footer />
     </main>
   );
 }
