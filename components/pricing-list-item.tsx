@@ -30,7 +30,12 @@ export default function PricingListItem({
         "bg-black/50": dark,
       })}
     >
-      <h3 className="self-center py-2 w-1/2 text-center rounded-full bg-black">
+      <h3
+        className={classNames(
+          montserrat.className,
+          "self-center py-2 w-1/2 text-center rounded-full bg-black font-medium",
+        )}
+      >
         {title}
       </h3>
       <p>{description}</p>
