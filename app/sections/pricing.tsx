@@ -107,10 +107,7 @@ export default function Pricing() {
         Membership Pricing
       </h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-      <div
-        className="bg-slate-300 mt-3 md:mt-7 relative grid grid-cols-2 gap-5 text-custom-orange font-medium text-sm xs:text-base w-full xs:w-auto *:px-2 sm:*:px-4 py-1 *:z-10 *:transition *:text-center cursor-pointer rounded-full"
-        onClick={() => setWithTrainer(!withTrainer)}
-      >
+      <div className="bg-slate-200 mt-3 md:mt-7 relative grid grid-cols-2 gap-5 text-custom-orange font-medium text-sm xs:text-base w-full xs:w-auto *:px-2 sm:*:px-4 py-1 *:z-10 *:transition *:text-center cursor-pointer rounded-full">
         <span
           className={classNames(
             "h-full w-1/2 top-0 left-0 rounded-full ease-in-out bg-custom-orange shadow-inner shadow-black transition-all absolute",
@@ -121,6 +118,7 @@ export default function Pricing() {
           )}
         ></span>
         <p
+          onClick={() => setWithTrainer(false)}
           className={classNames({
             "text-white": !withTrainer,
             "text-custom-orange": withTrainer,
@@ -129,6 +127,7 @@ export default function Pricing() {
           Without Trainer
         </p>
         <p
+          onClick={() => setWithTrainer(true)}
           className={classNames({
             "text-white": withTrainer,
             "text-custom-orange": !withTrainer,
