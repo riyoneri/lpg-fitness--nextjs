@@ -97,47 +97,49 @@ export default function Pricing() {
     <PricingListItem key={pricing.id} {...pricing} withTrainer={withTrainer} />
   ));
   return (
-    <section className="flex flex-col md:items-center gap-3" id="pricing">
-      <h1
-        className={classNames(
-          montserrat.className,
-          "font-semibold text-xl md:text-2xl",
-        )}
-      >
-        Membership Pricing
-      </h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-      <div className="bg-slate-200 mt-3 md:mt-7 relative grid grid-cols-2 gap-5 text-custom-orange font-medium text-sm xs:text-base w-full xs:w-auto *:px-2 sm:*:px-4 py-1 *:z-10 *:transition *:text-center cursor-pointer rounded-full">
-        <span
+    <section className="py-5 md:py-20" id="pricing">
+      <div className="flex flex-col md:items-center gap-3">
+        <h1
           className={classNames(
-            "h-full w-1/2 top-0 left-0 rounded-full ease-in-out bg-custom-orange shadow-inner shadow-black transition-all absolute",
-            {
-              "translate-x-0": !withTrainer,
-              "translate-x-full": withTrainer,
-            },
+            montserrat.className,
+            "font-semibold text-xl md:text-2xl",
           )}
-        ></span>
-        <p
-          onClick={() => setWithTrainer(false)}
-          className={classNames({
-            "text-white": !withTrainer,
-            "text-custom-orange": withTrainer,
-          })}
         >
-          Without Trainer
-        </p>
-        <p
-          onClick={() => setWithTrainer(true)}
-          className={classNames({
-            "text-white": withTrainer,
-            "text-custom-orange": !withTrainer,
-          })}
-        >
-          With Trainer
-        </p>
-      </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-5">
-        {displayPricing}
+          Membership Pricing
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div className="bg-slate-200 mt-3 md:mt-7 relative grid grid-cols-2 gap-5 text-custom-orange font-medium text-sm xs:text-base w-full xs:w-auto *:px-2 sm:*:px-4 py-1 *:z-10 *:transition *:text-center cursor-pointer rounded-full">
+          <span
+            className={classNames(
+              "h-full w-1/2 top-0 left-0 rounded-full ease-in-out bg-custom-orange shadow-inner shadow-black transition-all absolute",
+              {
+                "translate-x-0": !withTrainer,
+                "translate-x-full": withTrainer,
+              },
+            )}
+          ></span>
+          <p
+            onClick={() => setWithTrainer(false)}
+            className={classNames({
+              "text-white": !withTrainer,
+              "text-custom-orange": withTrainer,
+            })}
+          >
+            Without Trainer
+          </p>
+          <p
+            onClick={() => setWithTrainer(true)}
+            className={classNames({
+              "text-white": withTrainer,
+              "text-custom-orange": !withTrainer,
+            })}
+          >
+            With Trainer
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-5">
+          {displayPricing}
+        </div>
       </div>
     </section>
   );
