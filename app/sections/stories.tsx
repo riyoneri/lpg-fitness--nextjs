@@ -48,21 +48,25 @@ export default function Stories() {
   ));
 
   return (
-    <section className="space-y-5 pt-10 relative">
-      <BackgroundShapes />
-      <h1
-        className={classNames(
-          montserrat.className,
-          "font-medium text-2xl text-center relative",
-        )}
-      >
-        Success Stries
-      </h1>
-      <p className="text-center relative">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
-        reprehenderit itaque repudiandae molestias
-      </p>
-      <div className="grid xs:grid-cols-2 md:grid-cols-4">{displayStories}</div>
+    <section className="py-5 md:py-16" id="stories">
+      <div className="space-y-5 relative">
+        <BackgroundShapes />
+        <h1
+          className={classNames(
+            montserrat.className,
+            "font-medium text-2xl text-center relative",
+          )}
+        >
+          Success Stries
+        </h1>
+        <p className="text-center relative">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
+          reprehenderit itaque repudiandae molestias
+        </p>
+        <div className="grid xs:grid-cols-2 md:grid-cols-4">
+          {displayStories}
+        </div>
+      </div>
     </section>
   );
 }
