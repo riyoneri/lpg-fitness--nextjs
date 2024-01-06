@@ -97,7 +97,7 @@ export default function Pricing() {
     <PricingListItem key={pricing.id} {...pricing} withTrainer={withTrainer} />
   ));
   return (
-    <section className="flex flex-col md:items-center gap-3">
+    <section className="flex flex-col md:items-center gap-3" id="pricing">
       <h1
         className={classNames(
           montserrat.className,
