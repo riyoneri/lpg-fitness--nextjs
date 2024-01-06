@@ -29,7 +29,7 @@ export default function NavBar() {
     <>
       <nav className="hidden relative lg:flex items-center justify-between">
         <Link
-          href="/"
+          href="/#hero"
           className={classNames(montserrat.className, "font-bold text-xl")}
         >
           <span className="text-custom-orange">LPG</span>
@@ -37,16 +37,16 @@ export default function NavBar() {
         </Link>
 
         <div className="flex gap-10 *:px-5 *:rounded-full *:py-1 *:transition">
-          <Link href="/" className="hover:bg-custom-orange">
+          <Link href="/#about" className="hover:bg-custom-orange">
             About
           </Link>
-          <Link href="/" className="hover:bg-custom-orange">
+          <Link href="/#trainers" className="hover:bg-custom-orange">
             Trainers
           </Link>
-          <Link href="/" className="hover:bg-custom-orange">
+          <Link href="/#pricing" className="hover:bg-custom-orange">
             Pricing
           </Link>
-          <Link href="/" className="hover:bg-custom-orange">
+          <Link href="/#stories" className="hover:bg-custom-orange">
             Sucess Story
           </Link>
         </div>
@@ -85,7 +85,7 @@ export default function NavBar() {
         >
           <Link
             onClick={handleNavOpenChange}
-            href="/"
+            href="/#hero"
             className={classNames(montserrat.className, "font-bold text-xl")}
           >
             <span className="text-custom-orange">LPG</span>
@@ -98,28 +98,28 @@ export default function NavBar() {
           >
             <Link
               onClick={handleNavOpenChange}
-              href="/"
+              href="/#about"
               className="hover:bg-custom-orange"
             >
               About
             </Link>
             <Link
               onClick={handleNavOpenChange}
-              href="/"
+              href="/#trainers"
               className="hover:bg-custom-orange"
             >
               Trainers
             </Link>
             <Link
               onClick={handleNavOpenChange}
-              href="/"
+              href="/#pricing"
               className="hover:bg-custom-orange"
             >
               Pricing
             </Link>
             <Link
               onClick={handleNavOpenChange}
-              href="/"
+              href="/#stories"
               className="hover:bg-custom-orange"
             >
               Sucess Story
