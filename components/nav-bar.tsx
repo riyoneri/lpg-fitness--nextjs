@@ -13,7 +13,27 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMount, setIsMount] = useState(false);
-  useEffect(() => setIsMount(true), []);
+  const [isNavFixed, setIsNavFixed] = useState(false);
+  useEffect(() => {
+    setIsMount(true);
+
+    const handleScroll = () => {
+      if (window.scrollY > 35) {
+        setIsNavFixed(true);
+      } else {
+        setIsNavFixed(false);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("load", handleScroll);
+    };
+  }, []);
 
   const handleNavOpenChange = () => {
     if (isNavOpen) {
@@ -27,7 +47,13 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="hidden relative lg:flex items-center justify-between">
+      <nav
+        className={classNames("hidden lg:flex items-center justify-between", {
+          "fixed top-0 py-2 inset-x-0 z-50 width-responsive bg-black":
+            isNavFixed,
+          relative: !isNavFixed,
+        })}
+      >
         <Link
           href="/#hero"
           className={classNames(montserrat.className, "font-bold text-xl")}
@@ -51,9 +77,14 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <Button link="/" dark text="Join Us Now" />
+        <Button link="/#contact" dark text="Join Us Now" />
       </nav>
-      <div className="grid lg:hidden justify-end">
+      <div
+        className={classNames("grid lg:hidden justify-end", {
+          "fixed w-full inset-x-0 z-50 width-responsive": isNavFixed,
+          relative: !isNavFixed,
+        })}
+      >
         {isMount && (
           <StyleSheetManager shouldForwardProp={isValidProp}>
             <HamburgerCollapse
@@ -69,7 +100,9 @@ export default function NavBar() {
                 marginTop: "4px",
               }}
               buttonWidth={30}
-              barColor={isNavOpen ? "rgb(255 255 255)" : "rgb(30 30 30)"}
+              barColor={
+                isNavOpen || isNavFixed ? "rgb(255 255 255)" : "rgb(30 30 30)"
+              }
             />
           </StyleSheetManager>
         )}
@@ -123,6 +156,13 @@ export default function NavBar() {
               className="hover:bg-custom-orange"
             >
               Sucess Story
+            </Link>
+            <Link
+              onClick={handleNavOpenChange}
+              href="/#contact"
+              className="hover:bg-custom-orange"
+            >
+              Contact us
             </Link>
           </div>
         </nav>
