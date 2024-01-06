@@ -109,7 +109,7 @@ export default function NavBar() {
 
         <nav
           className={classNames(
-            "text-white fixed inset-0 z-10 px-5 bg-black/50 flex flex-col items-center pt-10 gap-7 overflow-scroll xs:gap-10",
+            "text-white fixed inset-0 z-10 px-5 bg-black/90 flex flex-col items-center pt-10 gap-7 overflow-scroll xs:gap-10",
             {
               ["block"]: isNavOpen,
               ["hidden"]: !isNavOpen,
