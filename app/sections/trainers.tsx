@@ -34,30 +34,34 @@ const displayTrainersSlides = TrainersArray.map((trainer) => (
 
 export default function Trainers() {
   return (
-    <section className="relative">
-      <BackgroundShapes flipShapes />
-      <div className="grid md:grid-cols-2 gap-10 relative items-stretch p-5">
-        <div className="flex flex-col justify-center gap-5 items-start">
-          <h1 className={classNames(montserrat.className, "font-bold text-xl")}>
-            Our Trainers
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-            laudantium debitis doloremque quam quo dicta ipsum earum autem
-            delectus voluptatum temporibus, perspiciatis quibusdam consectetur
-            tenetur ad quisquam quia ratione officiis.
-          </p>
-        </div>
-        <div className="flex flex-col overflow-hidden">
-          <Swiper
-            modules={[EffectCube]}
-            loop
-            effect="cube"
-            className="mx-auto w-full h-60 lg:w-1/2"
-            grabCursor
-          >
-            {displayTrainersSlides}
-          </Swiper>
+    <section className="md:py-20" id="trainers">
+      <div className="relative">
+        <BackgroundShapes flipShapes />
+        <div className="grid md:grid-cols-2 gap-10 relative items-stretch p-5">
+          <div className="flex flex-col justify-center gap-5 items-start">
+            <h1
+              className={classNames(montserrat.className, "font-bold text-xl")}
+            >
+              Our Trainers
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              laudantium debitis doloremque quam quo dicta ipsum earum autem
+              delectus voluptatum temporibus, perspiciatis quibusdam consectetur
+              tenetur ad quisquam quia ratione officiis.
+            </p>
+          </div>
+          <div className="flex flex-col overflow-hidden">
+            <Swiper
+              modules={[EffectCube]}
+              loop
+              effect="cube"
+              className="mx-auto w-full h-60 lg:w-1/2"
+              grabCursor
+            >
+              {displayTrainersSlides}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
