@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import { montserrat, story1, story2, story3, story4 } from "../assets";
-import { StaticImageData } from "next/image";
+import { montserrat } from "../assets";
 import StoryListItem from "@/components/story-list-item";
 import BackgroundShapes from "@/components/background-shapes";
 
@@ -8,7 +7,7 @@ export interface Story {
   id: number;
   name: string;
   story: string;
-  image: StaticImageData;
+  image: string;
 }
 
 const StoriesArray: Story[] = [
@@ -16,29 +15,32 @@ const StoriesArray: Story[] = [
     id: 0,
     name: "Derek",
     story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus",
-    image: story1,
+      "Derek improved his strength and endurance significantly at LPG Fitness",
+    image:
+      "https://images.unsplash.com/flagged/photo-1576579206905-df3aa87352b6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zml0bmVzcyUyMGJveXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 1,
-    name: "Anthony",
-    story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus",
-    image: story2,
+    name: "Isabella",
+    story: "Isabella reached her fitness milestones at LPG Fitness",
+    image:
+      "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zml0bmVzcyUyMGdpcmx8ZW58MHx8MHx8fDA%3D",
   },
   {
     id: 2,
     name: "John",
     story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus",
-    image: story3,
+      "John gained 10 pounds of lean muscle through our specialized program",
+    image:
+      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zml0bmVzcyUyMGJveXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     id: 3,
-    name: "Ezekiel",
+    name: "Sophia",
     story:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus",
-    image: story4,
+      "Sophia improved her fitness and discovered a passion for wellness at LPG Fitness",
+    image:
+      "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZpdG5lc3MlMjBnaXJsfGVufDB8fDB8fHww",
   },
 ];
 
@@ -60,10 +62,10 @@ export default function Stories() {
           Success Stries
         </h1>
         <p className="text-center relative">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
-          reprehenderit itaque repudiandae molestias
+          Be inspired by the transformational journeys of our members at LPG
+          Fitness
         </p>
-        <div className="grid xs:grid-cols-2 md:grid-cols-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4">
           {displayStories}
         </div>
       </div>
