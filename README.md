@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LPG Fitness
 
-## Getting Started
+Welcome to the GitHub repository of LPG Fitness, a state-of-the-art fitness center dedicated to helping individuals achieve their health and fitness goals.
 
-First, run the development server:
+## About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LPG Fitness provides effective, accessible, and diverse fitness programs to help individuals achieve their personal health goals. With our expert trainers and state-of-the-art facilities, we're committed to creating a supportive and motivating environment for all fitness levels.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Services
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We offer a variety of services including:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Weight Lifting:** Boost strength and endurance with diverse weight exercises.
+- **Private Training:** Personalized sessions tailored to your unique fitness goals.
+- **Building Muscle:** Specialized regimen for sculpting physique and gaining muscle.
 
-## Learn More
+## Pricing
 
-To learn more about Next.js, take a look at the following resources:
+We offer flexible pricing options for per day, per week, and per month durations. Both trainer-guided and self-guided options are available.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Success Stories
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Our members have achieved remarkable transformations through their dedication and our guidance. Read about their journeys in the Success Stories section of our website.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the terms of the MIT license.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies used
+
+- Nextjs 14
+- TailwindCSS 3.4
+- BoxIcons
+- Typescript 5
