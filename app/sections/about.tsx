@@ -7,7 +7,7 @@ import "@vidstack/react/player/styles/base.css";
 
 export default function About() {
   return (
-    <section className="py-16" id="about">
+    <section className="py-5 md:py-20" id="about">
       <div className="rounded-3xl p-5 sm:p-10 bg-about-image bg-blend-multiply bg-cover bg-center space-y-10">
         <h1
           className={classNames(
