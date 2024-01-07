@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import tailwindClipPath from "tailwind-clip-path";
 import vidStack from "@vidstack/react/tailwind.cjs";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 const config: Config = {
   content: [
@@ -36,6 +37,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindClipPath, vidStack],
+  plugins: [tailwindClipPath, vidStack, tailwindScrollbar],
 };
 export default config;
