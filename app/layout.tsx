@@ -15,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={classNames(questrial.className, "text-white bg-black-light")}
+        className={classNames(
+          questrial.className,
+          "text-white bg-black-light scrollbar-none",
+        )}
       >
         {children}
       </body>
