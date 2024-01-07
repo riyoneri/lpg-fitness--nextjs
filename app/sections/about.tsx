@@ -3,7 +3,6 @@
 import Button from "@/components/button";
 import classNames from "classnames";
 import { montserrat } from "../assets";
-import "@vidstack/react/player/styles/base.css";
 
 export default function About() {
   return (
@@ -18,29 +17,20 @@ export default function About() {
           About us
         </h1>
         <div className="lg:w-1/2 grid gap-5 sm:gap-10">
-          <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, earum
-            reiciendis? Modi esse voluptas, vel tempora, quod qui voluptate
-            animi vero totam, quaerat labore cupiditate non corrupti amet
-            architecto ea!
+          <p>
+            At LPG Fitness, we believe in the power of fitness to transform
+            lives. Our mission is to provide effective, accessible, and diverse
+            fitness programs to help individuals achieve their personal health
+            goals. With our expert trainers and state-of-the-art facilities,
+            we&apos;re committed to creating a supportive and motivating
+            environment for all fitness levels. Join us and experience the LPG
+            Fitness difference!
           </p>
-          <Button text="Get started" link="/" className="justify-self-start" />
-        </div>
-        <div className="grid gap-5 sm:grid-cols-3">
-          <div className="h-10 bg-custom-orange"></div>
-          <div className="h-10 bg-custom-orange"></div>
-          <div className="h-10 bg-custom-orange"></div>
-          {/* <MediaPlayer
-            src="/easy.mp4"
-            title="Workout 1"
-            className="h-20 overflow-hidden bg-green-500 relative"
-          >
-            <MediaProvider />
-            <PlayButton className="group p-1 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid place-content-center">
-              <PlayIcon className="size-10 hidden group-data-[paused]:block bg-green-500" />
-              <PauseIcon className="size-10 group-data-[paused]:hidden bg-green-500" />
-            </PlayButton>
-          </MediaPlayer> */}
+          <Button
+            text="Get started"
+            link="/#contact"
+            className="justify-self-start"
+          />
         </div>
       </div>
     </section>
