@@ -45,10 +45,9 @@ export default function Trainers() {
               Our Trainers
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              laudantium debitis doloremque quam quo dicta ipsum earum autem
-              delectus voluptatum temporibus, perspiciatis quibusdam consectetur
-              tenetur ad quisquam quia ratione officiis.
+              Our diverse team of fitness professionals are dedicated to helping
+              you reach your health goals. Experience the personalized approach
+              of LPG Fitness with our expert trainers
             </p>
           </div>
           <div className="flex flex-col overflow-hidden">
