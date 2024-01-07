@@ -82,7 +82,10 @@ const pricingArray: PricingItem[] = [
     },
     noTrainer: {
       amount: 150,
-      checks: ["A month of unlimited access to our facilities"],
+      checks: [
+        "A month of unlimited access to our facilities",
+        "Access to relaxation areas.",
+      ],
     },
   },
 ];
