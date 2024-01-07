@@ -13,12 +13,11 @@ export default function Hero() {
           <span className="text-yellow-400">Fitness</span>
         </h1>
         <p className="text-sm sm:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          quae ipsum. Praesentium, possimus ut, dolor enim nam beatae laudantium
-          nostrum totam doloribus quasi eligendi accusantium minus consequuntur
-          consequatur error autem!
+          Welcome to LPG Fitness! Your journey to health and fitness starts
+          here. With our modern facilities and expert trainers, we cater to all
+          fitness levels. Join us and start your transformation today!
         </p>
-        <Button link="/" text="Get started" className="self-start" />
+        <Button link="/#contact" text="Get started" className="self-start" />
       </div>
     </section>
   );
