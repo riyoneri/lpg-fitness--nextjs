@@ -29,10 +29,5 @@ export { default as trainer5 } from "./images/trainer-5.jpg";
 export { default as trainer6 } from "./images/trainer-6.jpg";
 export { default as trainer7 } from "./images/trainer-7.jpg";
 
-export { default as story1 } from "./images/story-1.png";
-export { default as story2 } from "./images/story-2.png";
-export { default as story3 } from "./images/story-3.png";
-export { default as story4 } from "./images/story-4.png";
-
 // SVG
 export { default as InfoShape } from "./svg/info-shape";
