@@ -31,8 +31,7 @@ export default function Info() {
             </h3>
             <hr className="w-full border-2" />
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              facere debitis
+              Boost strength and endurance with diverse weight exercises.
             </p>
           </div>
         </div>
@@ -55,8 +54,7 @@ export default function Info() {
           </h3>
           <hr className="w-full border-2" />
           <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere
-            debitis
+            Personalized sessions tailored to your unique fitness goals.
           </p>
         </div>
       </div>
@@ -79,8 +77,7 @@ export default function Info() {
             </h3>
             <hr className="w-full border-2" />
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              facere debitis
+              Specialized regimen for sculpting physique and gaining muscle.
             </p>
           </div>
         </div>
