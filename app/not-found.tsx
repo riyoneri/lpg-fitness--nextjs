@@ -13,7 +13,7 @@ export default function NotFound() {
         <p
           className={classNames(
             montserrat.className,
-            "font-bold bg-gradient-to-r to-black-light to-50% pl-1 from-50% from-custom-orange  text-transparent bg-clip-text text-2xl xs:text-3xl",
+            "font-bold bg-gradient-to-r to-black-light to-50% pl-1 from-50% from-custom-orange text-transparent bg-clip-text text-2xl xs:text-3xl",
           )}
         >
           Page not found
