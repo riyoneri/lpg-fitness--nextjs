@@ -24,68 +24,65 @@ const pricingArray: PricingItem[] = [
   {
     id: 0,
     title: "Day",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-        voluptatum inventore unde sapiente quis maxime dolorum`,
+    description: `Enjoy a full day of access to our state-of-the-art fitness facilities`,
     trainer: {
       amount: 20,
       checks: [
-        "Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
+        "Personalized workout plan for the day",
+        "One-on-one coaching sessions",
+        "Nutritional guidance",
+        "Access to all gym equipment",
       ],
     },
     noTrainer: {
       amount: 15,
       checks: [
-        "Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        "Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
+        "Full-day access to all gym equipment",
+        "Self-guided workout areas",
+        "Locker room and shower facilities",
+        "Participation in group classes (if available)",
       ],
     },
   },
   {
     id: 1,
     title: "Week",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-        voluptatum inventore unde sapiente quis maxime dolorum`,
+    description: `Commit to a week of fitness with full access to our facilities and programs`,
     dark: true,
     trainer: {
       amount: 90,
       checks: [
-        "Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
+        "A week of personalized training sessions",
+        "Nutritional guidance",
+        "Progress tracking and adjustments",
+        "Access to all gym equipment",
       ],
     },
     noTrainer: {
       amount: 60,
       checks: [
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
+        "A week of full access to our facilities",
+        "Self-guided workout areas",
+        "Locker room and shower facilities",
       ],
     },
   },
   {
     id: 2,
     title: "Month",
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-        voluptatum inventore unde sapiente quis maxime dolorum`,
+    description: `Embrace a healthier lifestyle with a month-long membership, offering unlimited access to our facilities.`,
     trainer: {
       amount: 200,
       checks: [
-        "Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
-        " Lorem ipsum dolor sit amet consectetur",
+        "A month-long fitness program with personalized coaching",
+        "Nutritional guidance and meal planning",
+        "Regular progress tracking and adjustments",
+        "Access to all gym equipment",
       ],
     },
     noTrainer: {
       amount: 150,
-      checks: [" Lorem ipsum dolor sit amet consectetur"],
+      checks: ["A month of unlimited access to our facilities"],
     },
   },
 ];
@@ -107,7 +104,10 @@ export default function Pricing() {
         >
           Membership Pricing
         </h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+        <p>
+          Discover affordable fitness with our competitive and flexible pricing
+          options.
+        </p>
         <div className="bg-slate-200 mt-3 md:mt-7 relative grid grid-cols-2 gap-5 text-custom-orange font-medium text-sm xs:text-base w-full xs:w-auto *:px-2 sm:*:px-4 py-1 *:z-10 *:transition *:text-center cursor-pointer rounded-full">
           <span
             className={classNames(
