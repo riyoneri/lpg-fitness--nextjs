@@ -2,6 +2,7 @@ import classNames from "classnames";
 import "./globals.css";
 import { questrial } from "./assets";
 import { Metadata } from "next";
+const currentUrl = process.env.NEXT_CURRENT_URL;
 
 export const metadata: Metadata = {
   title: "LPG Fitness",
@@ -37,6 +38,13 @@ export const metadata: Metadata = {
   other: {
     "msapplication-TileColor": "#1e1e1e",
     "theme-color": "#1e1e1e",
+  },
+  openGraph: {
+    title: "LPG Fitness",
+    description:
+      "Welcome to LPG Fitness! Your journey to health and fitness starts here. With our modern facilities and expert trainers",
+    url: `${currentUrl}`,
+    images: [`${currentUrl}favicon.ico`],
   },
 };
 
