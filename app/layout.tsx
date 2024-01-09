@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description:
       "Welcome to LPG Fitness! Your journey to health and fitness starts here. With our modern facilities and expert trainers",
     url: `${currentUrl}`,
-    images: [`${currentUrl}favicon-32x32.png`],
+    images: [`${currentUrl}/favicon.ico`],
   },
 };
 
