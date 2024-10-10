@@ -7,6 +7,7 @@ export default function StoryListItem({ image, name, story }: Story) {
   return (
     <div className="relative">
       <Image
+        unoptimized
         src={image}
         alt={`${name} image`}
         className="xs:size-full h-96 object-top xs:object-center object-cover"
